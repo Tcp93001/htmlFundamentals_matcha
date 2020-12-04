@@ -71,7 +71,7 @@
 }
 
 .header {
-  margin: 40px 20px 150px 20px;
+  margin: 40px 20px 20px 20px;
   font-size: 0;
   text-align: center;
   height: 45px;
@@ -134,4 +134,81 @@
 .texto_centrado {
   text-align: center;
   color: #46484c;
+}
+
+.publish {
+  margin-left: 20px;
+  flex: 1;
+  background-color: aqua;
+}
+
+.publish h3 {
+  font-family: 'Alegreya', serif;
+  font-size: 40px;
+  line-height: 48px;
+  color: #025157;
+}
+
+.publish > p {
+  font-size: 16px;
+  color: #343434;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.publish > form {
+  display: flex;
+}
+
+.publish > form p {
+  color: #025157;
+  margin-right: 18px;
+}
+
+.publish > form button {
+  color: #fff;
+  background-color: #025157;
+  height: 45px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border: none;
+  padding: 5px;
+}
+
+.publish > form input {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  height: 45px;
+  margin-right: -5px;
+  border: 1px solid #c6c6c6;
+  padding: 0 5px;
+}
+
+.promo {
+  background-color: peru;
+  display: flex;
+  width: 70%;
+  margin: 100px auto;
+  align-items: flex-start;
+}
+
+.explanatory-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  background-color: red;
+}
+
+.explanatory-video img {
+  width: 120px;
+  margin-top: 10px;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fffbf7;
 }
