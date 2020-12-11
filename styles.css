@@ -139,7 +139,6 @@
 .publish {
   margin-left: 20px;
   flex: 1;
-  background-color: aqua;
 }
 
 .publish h3 {
@@ -185,7 +184,6 @@
 }
 
 .promo {
-  background-color: peru;
   display: flex;
   width: 70%;
   margin: 100px auto;
@@ -197,7 +195,6 @@
   flex-direction: column;
   align-items: center;
   flex: 1;
-  background-color: red;
 }
 
 .explanatory-video img {
@@ -215,7 +212,7 @@
 
 .features {
   display: grid;
-  height: 660px;
+  height: 880px;
   grid-template: repeat(2, 1fr) / repeat(2, 1fr);
   background-color: #025157;
   padding: 5% 10%;
@@ -279,4 +276,85 @@
 .features .feature-card .feature-image img {
   margin-top: 0;
   height: 100%;
+}
+
+@media (max-width: 425px) {
+  .navbar,
+  .actions {
+    display: none;
+  }
+
+  .main {
+    margin-top: 100px;
+  }
+
+  .main h1 {
+    font-size: 30px;
+  }
+
+  .banner > img {
+    width: 100%;
+  }
+
+  .promo {
+    flex-direction: column;
+    max-width: 90%;
+    margin: 30px auto;
+  }
+
+  .explanatory-video > video {
+    width: 100%;
+  }
+
+  .publish {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .publish > h3 {
+    font-size:25px;
+    line-height: 1.2;
+  }
+
+  .publish > form {
+    flex-direction: column;
+  }
+
+  .publish > form > div {
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .publish > form > div >input {
+    width: 65%;
+  }
+
+  .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .feature-image {
+    display: none;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .navbar,
+  .actions {
+    display: none;
+  }
+
+  .main h1 {
+    font-size: 45px;
+    color: blue;
+  }
+
+  .promo {
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    margin: 30px auto;
+  }
 }
